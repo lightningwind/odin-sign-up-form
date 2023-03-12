@@ -15,10 +15,22 @@ body {
     background-repeat: no-repeat; 
     background-size: cover; 
     width: 35%;
+    color: #FFF;
 }
 
 .right {
     display: flex; 
-    justify-content: center; 
-    width: 65%;
+    flex-direction: column; 
+}
+
+.first {
+    height: 40%; 
+}
+
+.second {
+    height: 30%; 
+}
+
+.third {
+    height: 30%; 
 }
