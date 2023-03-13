@@ -1,6 +1,8 @@
 body {
     height: 100vh; 
     width: 100vw; 
+    overflow: hidden; 
+    background-color: white; 
 }
 
 /* @font-face {
@@ -15,11 +17,25 @@ body {
 }
 
 .column-left {
+    display: flex; 
+    justify-content: center;
+
     background-image: url("./assets/images/background-image.jpg");
     background-repeat: no-repeat; 
     background-size: cover; 
+
     width: 35%;
+    height: 100%;
     color: #FFF;
+}
+
+.img-credit {
+    margin-top: auto;
+    margin-bottom: 10px; 
+}
+
+a {
+    color: inherit; 
 }
 
 .column-right {
