@@ -4,13 +4,18 @@ body {
     width: 100vw; 
 }
 
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
 .main {
     display: flex; 
     width: 100%;
     height: 100%; 
 }
 
-.left {
+.column-left {
     background-image: url("./assets/images/background-image.jpg");
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -18,20 +23,25 @@ body {
     color: #FFF;
 }
 
-.right {
+.column-right {
     display: flex; 
     flex-direction: column; 
     width: 65%; 
+    background-color: #EEE;
 }
 
-.first {
+.top-card {
     height: 40%; 
+    padding: 50px;
+    font-weight: 700; 
 }
 
-.second {
+.form-card {
     height: 30%; 
+    padding: 50px;
+    background-color: #FFF;
 }
 
-.third {
+.button-card {
     height: 30%; 
 }
