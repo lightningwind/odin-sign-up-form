@@ -47,14 +47,19 @@ a {
 
 .top-card {
     height: 40%; 
-    padding: 50px;
+    padding: 10%;
     font-weight: 700; 
 }
 
 .form-card {
     height: 30%; 
-    padding: 50px;
+    padding: 5% 10%;
     background-color: #FFF;
+}
+
+.form-inputs {
+    display: flex; 
+    gap: 10%; 
 }
 
 .form-label {
