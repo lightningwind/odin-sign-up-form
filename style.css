@@ -57,6 +57,28 @@ a {
     background-color: #FFF;
 }
 
+.form-label {
+    /* font-weight: 900; 
+    font-size: 20px;  */
+    display: block; 
+}
+
+.form-input {
+    display: block; 
+    /* margin-top: 5%;  */
+    padding: 0.2rem; 
+    border: 2px solid gray; 
+    border-radius: 0.2rem; 
+    color: #333; 
+    /* font-size: 1.2rem;  */
+    width: 100%; 
+}
+
+.form-input:focus {
+    outline: none; 
+    border-color: blue; 
+}
+
 .button-card {
     height: 30%; 
 }
