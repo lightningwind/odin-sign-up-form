@@ -1,11 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh; 
     width: 100vw; 
+    margin: 0;
+    padding: 0; 
     overflow: hidden; 
     background-color: white; 
 }
 
-/* @font-face {
+/* TODO @font-face {
     font-family: ;
     src: url();
 } */
@@ -42,62 +48,86 @@ a {
     display: flex; 
     flex-direction: column; 
     width: 65%; 
-    background-color: #EEE;
+    height: 100%;
+    background-color: #E5E7EB;
 }
 
 .column-right > * {
-    padding: 10%;
+    padding: 0 5%;
 }
 
 .top-card {
-    height: 40%; 
-    font-weight: 700; 
-    /* padding-top: ???;  */
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 30%; 
+    padding-bottom: 5%; 
 }
 
 .form-card {
+    position: relative; 
     height: 30%; 
-    padding: 5% 10%;
     background-color: #FFF;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25); 
 }
 
 .form-inputs {
     display: flex; 
-    gap: 10%; 
+    gap: 15%; 
 }
 
 .form-label {
-    /* font-weight: 900; 
-    font-size: 20px;  */
+    font-size: 0.8em;
     display: block; 
+    text-transform: uppercase;
 }
 
 .form-input {
     display: block; 
-    /* margin-top: 5%;  */
-    padding: 0.2rem; 
+    padding: 5px 10px; 
     border: 1px solid #E5E7EB; 
-    border-radius: 0.2rem; 
+    border-radius: 5px; 
+    margin-bottom: 20px;
     color: #333; 
-    /* font-size: 1.2rem;  */
-    width: 100%; 
+    height: 25px;
+    width: 200px; 
 }
 
 .form-input:focus {
     outline: none; 
     border-color: blue; 
-    /* box-shadow: ???; */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25); 
+}
+
+.error {
+    position: relative; 
+    top: -20px;
+    font-size: 0.8em;
+    font-weight: 900;  
+    color: red; 
 }
 
 .button-card {
-    height: 30%; 
+    height: 40%; 
+    padding-top: 5%;
 }
 
 .btn {
     background-color: #596D48;
     color: #FFF; 
-    padding: 15px 30px;
+    padding: 15px 40px;
     border: none; 
     border-radius: 6px; 
     font-size: 15px;
+    cursor: pointer; 
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.login {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 700;
 }
