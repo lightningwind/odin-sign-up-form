@@ -45,10 +45,14 @@ a {
     background-color: #EEE;
 }
 
+.column-right > * {
+    padding: 10%;
+}
+
 .top-card {
     height: 40%; 
-    padding: 10%;
     font-weight: 700; 
+    /* padding-top: ???;  */
 }
 
 .form-card {
@@ -72,7 +76,7 @@ a {
     display: block; 
     /* margin-top: 5%;  */
     padding: 0.2rem; 
-    border: 2px solid gray; 
+    border: 1px solid #E5E7EB; 
     border-radius: 0.2rem; 
     color: #333; 
     /* font-size: 1.2rem;  */
@@ -82,8 +86,18 @@ a {
 .form-input:focus {
     outline: none; 
     border-color: blue; 
+    /* box-shadow: ???; */
 }
 
 .button-card {
     height: 30%; 
+}
+
+.btn {
+    background-color: #596D48;
+    color: #FFF; 
+    padding: 15px 30px;
+    border: none; 
+    border-radius: 6px; 
+    font-size: 15px;
 }
