@@ -31,114 +31,42 @@
             </div>
             <div class="form-card">
                 <h3>Let's do this!</h3>
-
-                <!-- <form action="" class="form-main-div">
-                    <div class="form-inputs">
-                        <div class="first-name">
-                            <label for="first_name" class="form-label">First Name</label>
-                            <input
-                                type="text"
-                                name="first_name"
-                                id="first_name"
-                                class="form-input"
-                                required
-                            />
-                        </div>
-                        <div class="last-name">
-                            <label for="last_name" class="form-label">Last Name</label>
-                            <input
-                                type="text"
-                                name="last_name"
-                                id="last_name"
-                                class="form-input"
-                                required
-                            />
-                        </div>
-                    </div>
-                    <div class="form-inputs">
-                        <div class="email">
-                            <label for="email" class="form-label">Email</label>
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                class="form-input"
-                                required
-                            />
-                        </div>
-                        <div class="phone-number">
-                            <label for="phone_number" class="form-label">Phone Number</label>
-                            <input
-                                type="tel"
-                                name="phone_number"
-                                id="phone_number"
-                                class="form-input"
-                                required
-                            />
-                        </div>
-                    </div>
-                    <div class="form-inputs">
-                        <div class="password">
-                            <label for="pwd" class="form-label">Password</label>
-                            <input
-                                type="password"
-                                name="password"
-                                id="pwd"
-                                class="form-input"
-                                required
-                            />
-                        </div>
-                        <div class="confirm-password">
-                            <label for="confirm-pwd" class="form-label">Confirm Password</label>
-                            <input
-                                type="password"
-                                name="confirm_password"
-                                id="confirm-pwd"
-                                class="form-input"
-                                required
-                            />
-                        </div>
-                    </div>
-                </form> -->
-
-                <!-- Let's create the form by splitting it into two parts: left and right -->
-                <form action="" class="form-main-div">
-                    <!-- LEFT HALF -->
+                <form action="" class="form-main-div" id="sign-up-form">
                     <div class="form-divs">
                         <div class="form-div">
                             <label for="firstName">First Name</label>
-                            <input type="text" name="first_name" id="firstName" />
+                            <input type="text" name="first_name" id="firstName" required />
                         </div>
-                        <div class="form-div">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" />
-                        </div>
-                        <div class="form-div">
-                            <label for="pwd">Password</label>
-                            <input type="password" name="password" id="pwd" />
-                        </div>
-                    </div>
-                    <!-- RIGHT HALF -->
-                    <div class="form-divs">
                         <div class="form-div">
                             <label for="lastName">Last Name</label>
-                            <input type="text" name="last_name" id="lastName" />
+                            <input type="text" name="last_name" id="lastName" required />
+                        </div>
+                    </div>
+                    <div class="form-divs">
+                        <div class="form-div">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required />
                         </div>
                         <div class="form-div">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" name="phone_num" id="phone" />
+                            <input type="tel" name="phone_num" id="phone" required />
+                        </div>
+                    </div>
+                    <div class="form-divs">
+                        <div class="form-div">
+                            <label for="pwd">Password</label>
+                            <input type="password" name="password" id="pwd" required/>
+                            <p class="error-msg">*Passwords do not match</p>
                         </div>
                         <div class="form-div">
                             <label for="confirmPwd">Confirm Password</label>
-                            <input type="password" name="confirm_password" id="confirmPwd" />
+                            <input type="password" name="confirm_password" id="confirmPwd" required />
                         </div>
                     </div>
                 </form>
-
-                <!-- <div class="error">*Passwords do not match</div> -->
             </div>
             <div class="button-card">
-                <button class="btn" type="submit">Create Account</button>
+                <button class="btn" type="submit" form="sign-up-form">Create Account</button>
                 <p>Already have an account? <a href="#" class="login">Log in</a></p>
             </div>
         </div>

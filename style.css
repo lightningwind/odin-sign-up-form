@@ -90,14 +90,20 @@ a {
 
 .form-main-div {
     display: flex; 
-    width: 80%; 
-    justify-content: space-between; 
+    flex-direction: column; 
+    width: 80%;  
+    height: 100%; 
+    gap: 10%;
+}
+
+.form-divs {
+    display: flex; 
+    gap: 20%;
 }
 
 .form-div {
     display: flex; 
     flex-direction: column;
-    margin-bottom: 20px; 
 }
 
 label {
@@ -118,13 +124,12 @@ input:focus {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
 }
 
-input:invalid {
+.error {
     border: 1px solid red; 
 }
 
-.error {
-    position: relative; 
-    top: -20px;
+.error-msg {
+    margin: 0;
     font-size: 0.8em; 
     color: red; 
 }
@@ -141,6 +146,7 @@ input:invalid {
     border: none; 
     border-radius: 6px; 
     font-size: 15px;
+    font-weight: 900; 
     cursor: pointer; 
 }
 
