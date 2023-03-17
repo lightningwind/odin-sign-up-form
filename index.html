@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="main">
@@ -30,7 +31,8 @@
             </div>
             <div class="form-card">
                 <h3>Let's do this!</h3>
-                <form action="">
+
+                <!-- <form action="" class="form-main-div">
                     <div class="form-inputs">
                         <div class="first-name">
                             <label for="first_name" class="form-label">First Name</label>
@@ -97,8 +99,43 @@
                             />
                         </div>
                     </div>
+                </form> -->
+
+                <!-- Let's create the form by splitting it into two parts: left and right -->
+                <form action="" class="form-main-div">
+                    <!-- LEFT HALF -->
+                    <div class="form-divs">
+                        <div class="form-div">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="first_name" id="firstName" />
+                        </div>
+                        <div class="form-div">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div class="form-div">
+                            <label for="pwd">Password</label>
+                            <input type="password" name="password" id="pwd" />
+                        </div>
+                    </div>
+                    <!-- RIGHT HALF -->
+                    <div class="form-divs">
+                        <div class="form-div">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="last_name" id="lastName" />
+                        </div>
+                        <div class="form-div">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" name="phone_num" id="phone" />
+                        </div>
+                        <div class="form-div">
+                            <label for="confirmPwd">Confirm Password</label>
+                            <input type="password" name="confirm_password" id="confirmPwd" />
+                        </div>
+                    </div>
                 </form>
-                <div class="error">*Passwords do not match</div>
+
+                <!-- <div class="error">*Passwords do not match</div> -->
             </div>
             <div class="button-card">
                 <button class="btn" type="submit">Create Account</button>
